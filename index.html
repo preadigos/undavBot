@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>UNDAV Universidad Nacional de Avellaneda</title>
+    <link rel="stylesheet" href="./index_files/estilos2.css" type="text/css">
+    <meta name="google-site-verification" content="D1rXkGjFDLMnYSfngfyVyxCb98jzImFtks3JGhXxbZQ">
+    <link rel="shortcut icon" href="https://www.undav.edu.ar/general/recursos/adjuntos/1441.ico">
+    <script type="text/javascript" src="./index_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./index_files/rotativoscripts.js"></script>
+    <script type="text/javascript" src="./index_files/mailtool.js"></script>
+    <script src="./index_files/accordion.js"></script>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+    <!-- Chatbot UNDAV -->
+    <div id="chatbot-button">💬</div>
+
+    <div id="chatbot-modal" class="hidden">
+        <div id="chatbot-header">
+            <span>UNDAV-BOT</span>
+            <button id="close-chat" aria-label="Cerrar">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4.3934" y1="4.3934" x2="15.6066" y2="15.6066" stroke="#333" stroke-width="2" stroke-linecap="round" />
+                    <line x1="15.6066" y1="4.3934" x2="4.3934" y2="15.6066" stroke="#333" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+        <div id="chatbot-body">
+            <div id="chat-messages"></div>
+            <div id="faq-list"></div>
+
+            <button id="back-to-faqs-button" style="display: none;">Volver al menú principal</button>
+
+            <div id="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Escribí tu consulta...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+    <!-- Fin Chatbot UNDAV -->
+
+    <div id="header">
+        <h1>Universidad Nacional de Avellaneda</h1>
+        <a href="https://undav.edu.ar/"><img src="./index_files/22843.jpg" alt="Undav Universidad Nacional de Avellaneda"></a>
+
+        <img style="width: 437px; height: 130px; position: absolute; top: 0px; left: 566px;" src="./index_files/37148.png" alt="Undav Universidad Nacional de Avellaneda">
+
+
+        <!--<a href="https://undav.edu.ar/index.php?idcateg=5"><img style="width: 437px; height: 130px; position: absolute; top: 0px; left: 566px;" src="general/recursos/adjuntos/40323.png" alt="Undav Universidad Nacional de Avellaneda" /></a>-->
+    </div>
+
+    <div id="barra">
+        <ul>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=25">Inicio&nbsp;/&nbsp;</a></li>
+            <li></li>
+            <li><a href="http://mail.undav.edu.ar/" target="_blank">Webmail /&nbsp;</a></li>
+            <li></li>
+            <li><a href="http://ead.undav.edu.ar/" target="_blank">Campus virtual /</a></li>
+            <li><a href="http://academica.undav.edu.ar/g3w/" target="_blank">&nbsp;SIU GUARANI /</a></li>
+            <li style="margin-left: 5px; color: #266ba4;"></li>
+            <li>
+                <a href="https://www.facebook.com/UNDAV2011" target="_blank"><img src="./index_files/face.jpg" alt="Seguí a la Undav en Facebook"></a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/UNDAVOFICIAL" target="_blank"><img src="./index_files/twit.jpg" alt="Seguí a la Undav en twitter"></a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/user/undavoficial" target="_blank"><img src="./index_files/484.png" alt="Seguí a la Undav en You Tube"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/undav_oficial/" target="_blank"><img src="./index_files/17657.png"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/school/universidad-nacional-de-avellaneda-undav-/" target="_blank"><img src="./index_files/35300.png"></a>
+            </li>
+        </ul>
+    </div>
+    <div id="menuhorizontal">
+        <ul>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=19">Institucional &nbsp;|</a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=70">Académica &nbsp;|</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=73">Investigación y Vinculación &nbsp;| </a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=7">Extensión &nbsp;| </a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=248">Bienestar &nbsp;|</a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=552">Cultura y Comunicación &nbsp;| </a></li>
+            <li></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=102">Educación a Distancia &nbsp;| </a></li>
+            <li></li>
+            <li><a class="inst" href="https://undav.edu.ar/index.php?idcateg=5">Inscripciones &nbsp;| </a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=68">Estudiantes &nbsp;| </a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=298">Biblioteca &nbsp;|</a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=238">Títulos y Certificaciones &nbsp;| </a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=320">Observatorios &nbsp;| </a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li><a href="https://undavdigital.undav.edu.ar/">UNDAV Digital</a></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="contenido">
+        <!-- Inicio contenido -->
+        <div id="menulateral">
+            <dl class="accordion" id="miaccordion">
+                <dt style="background-color: #909B1C;" class="open">Departamento de<br> Ambiente y Turismo</dt>
+                <dd>
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=279">Ciencias Ambientales</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=257">Conservación de la Naturaleza y Áreas Naturales Protegidas</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=327">Turismo </a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=328">Guía Universitario en Turismo</a></li>
+                    </ul>
+                </dd>
+                <dt style="background-color: #A6398A;">Departamento de <br>Arquitectura, Diseño y Urbanismo</dt>
+                <dd style="height: 0px; display: none;">
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=255">Arquitectura</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=223">Diseño Industrial</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=13">Diseño de Marcas y Envases</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=222">CCC Licenciatura en Diseño Industrial</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=94">Tecnicatura en Intervención Socio Comunitaria</a></li>
+                        <li class="depto" style="background: #eeeeef; color: #fff;"><a href="https://cehp-dadu.wixsite.com/centro-de-estudios-d" target="_blank">Centro de Estudios del Habitar Popular</a></li>
+                    </ul>
+                </dd>
+                <dt style="background-color: #CA2527;">Departamento de Ciencias Sociales</dt>
+                <dd style="height: 0px; display: none;">
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=297">Abogacía</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=353">Economía</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=190">Tecnicatura en Gestión Universitaria</a></li>
+                    </ul>
+                </dd>
+                <dt style="background-color: #168D9E;">Departamento de <br> Cultura, Arte y Comunicación</dt>
+                <dd style="height: 0px; display: none;">
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=63">Artes Audiovisuales</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=10">Gestión Cultural</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=65">Periodismo</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=221">CCC Licenciatura en Periodismo</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=258">CCC Licenciatura en Gestión Cultural</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=163">CCC Licenciatura en Historia</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=182">Tecnicatura en Dirección de Orquestas y Coros Infantiles y Juveniles</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=96">CCC en Museología y Repositorios Culturales y Naturales</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=181">Tecnicatura en Política, Gestión y Comunicación</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=605">CCC Licenciatura en Comunicación Política</a></li>
+                    </ul>
+                </dd>
+                <dt style="background-color: #F47D21;">Departamento de Salud y Actividad Física</dt>
+                <dd style="height: 0px; display: none;">
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=66">Enfermería</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=11">Actividad Física y Deporte</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=259">Tecnicatura Universitaria en Prótesis Dental</a></li>
+                        <li class="depto"></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=330">CCC Licenciatura en Actividad Física y Deporte</a></li>
+                    </ul>
+                </dd>
+                <dt style="background-color: #E3A400;">Departamento de Tecnología y Administración</dt>
+                <dd style="height: 0px; display: none;">
+                    <ul>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=64">Ingeniería en Informática</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=256">Ingeniería en Materiales</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=261">Licenciatura en Gerencia de Empresas</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=554">CCC Licenciatura en Higiene y Seguridad en el Trabajo</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=304">Tecnicatura Universitaria en Mantenimiento Industrial del Sector Automotriz</a></li>
+                        <li class="depto"><a class="depto" href="https://undav.edu.ar/index.php?idcateg=180">Tecnicatura Universitaria en Seguridad e Higiene de la Industria Mecánico-Automotriz</a></li>
+                    </ul>
+                </dd>
+                <dt style="padding:0; margin-top:10px">
+
+                    <a href="https://undav.edu.ar/index.php?idcateg=503">
+                        <img src="./index_files/31079.jpg">
+                    </a>
+
+                </dt>
+
+                <dd style="height: 0px; display: none;">
+                    <ul><a href="https://undav.edu.ar/index.php?idcateg=525">.</a></ul>
+                </dd>
+            </dl>
+        </div>
+        <div id="contenidocentralhome">
+            <div class="sliderContainer">
+                <div id="slider">
+                    <div class="slidesContainer" style="width: 1214px;">
+
+
+
+
+                        <div class="slide">
+                            <a href="https://undav.edu.ar/general/recursos/adjuntos/39919.pdf" target="_blank">
+                                <img src="./index_files/39918.jpg" width="607" height="120" border="0"></a>
+                        </div>
+
+                        <!--<div class="slide">
+<a href="https://www.undav.edu.ar/index.php?idcateg=574" target="_blank">
+<img src="https://www.undav.edu.ar/general/recursos/adjuntos/40269.jpg" WIDTH="607" HEIGHT="120" BORDER="0" /></a></div>
+
+<div class="slide">
+<a href="https://undav.edu.ar/general/recursos/adjuntos/40085.pdf" target="_blank">
+<img src="https://www.undav.edu.ar/general/recursos/adjuntos/40086.jpg" WIDTH="607" HEIGHT="120" BORDER="0" /></a></div>-->
+
+                        <div class="slide">
+                            <a href="https://undav.edu.ar/general/recursos/adjuntos/40353.pdf" target="_blank">
+                                <img src="./index_files/40044.jpg" width="607" height="120" border="0"></a>
+                        </div>
+
+
+
+
+
+
+
+
+                        <!--<div class="slide">
+<a href="https://undav.edu.ar/index.php?idcateg=323&id=38915">
+<img src="https://www.undav.edu.ar/general/recursos/adjuntos/39049.jpg" WIDTH="607" HEIGHT="120" BORDER="0" /></a></div>
+
+
+
+<div class="slide">
+<a href="https://undav.edu.ar/index.php?idcateg=323&id=37445">
+<img src="https://www.undav.edu.ar/general/recursos/adjuntos/37452.jpg" WIDTH="607" HEIGHT="120" BORDER="0" /></a></div>
+
+<div class="slide">
+<a href="https://coninformacion.undav.edu.ar/">
+<img src="https://www.undav.edu.ar/general/recursos/adjuntos/19478.jpg" WIDTH="607" HEIGHT="120" BORDER="0" /></a></div>-->
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <a href="https://undav.edu.ar/index.php#siguiente" class="next" title="Siguiente"><img src="./index_files/670.jpg" border="0" alt="" class="sobre1"></a>
+                <a href="https://undav.edu.ar/index.php#anterior" class="prev" title="Anterior"><img src="./index_files/668.jpg" border="0" alt="" class="sobre3"></a>
+
+            </div>
+            <table class="notashome" summary="noticias Undav">
+                <tbody>
+                    <tr>
+                        <td class="solapa">
+                            <a href="https://undav.edu.ar/index.php?idcateg=1&amp;level=0&amp;id=40886" rel="leer nota"><img src="./index_files/solapa_info.jpg" alt="mas informacion, leer nota"></a>
+                        </td>
+                        <td class="imagen"><img border="0" width="133" height="114" src="./index_files/40887.jpg" alt="imagen nota 1"></td>
+                        <td class="texto">
+                            <h2>Abierta la inscripción a Cursos de Posgrado 2025</h2>
+                            <p>Conocé las diferentes propuestas de la Escuela de Posgrado de la UNDAV y todos los requisitos para inscribirse.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="notashome" summary="noticias Undav">
+                <tbody>
+                    <tr>
+                        <td class="solapa">
+                            <a href="https://undav.edu.ar/index.php?idcateg=1&amp;level=0&amp;id=40850" rel="leer nota"><img src="./index_files/solapa_info.jpg" alt="mas informacion, leer nota"></a>
+                        </td>
+                        <td class="imagen"><img border="0" width="133" height="114" src="./index_files/40851.jpg" alt="imagen nota 1"></td>
+                        <td class="texto">
+                            <h2>Nuevos/as graduados/as en la universidad pública</h2>
+                            <p>La UNDAV llevó adelante su XXVIII Acto de Colación, donde 78 graduados/as de distintas carreras recibieron sus títulos.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="notashome" summary="noticias Undav">
+                <tbody>
+                    <tr>
+                        <td class="solapa">
+                            <a href="https://undav.edu.ar/index.php?idcateg=1&amp;level=0&amp;id=40861" rel="leer nota"><img src="./index_files/solapa_info.jpg" alt="mas informacion, leer nota"></a>
+                        </td>
+                        <td class="imagen"><img border="0" width="133" height="114" src="./index_files/40862.jpg" alt="imagen nota 1"></td>
+                        <td class="texto">
+                            <h2>La UNDAV impulsa el Programa PRESENTES</h2>
+                            <p>Busca fortalecer el acompañamiento a la trayectoria estudiantil y refuerza su compromiso con la permanencia a través de diferentes acciones.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+        <!-- FIN_contenidocentralhome -->
+        <div id="contenidodcha">
+            <a href="https://undav.edu.ar/index.php?idcateg=323" target="_self"><img border="0" src="./index_files/35147.png"></a>
+            <a href="https://www.undav.edu.ar/index.php?idcateg=69" target="_self"><img border="0" src="./index_files/35148.jpg"></a>
+            <a href="https://www.undav.edu.ar/index.php?idcateg=154" target="_self"><img border="0" src="./index_files/39787.jpg"></a>
+            <a href="https://www.undav.edu.ar/index.php?idcateg=637" target="_self"><img border="0" src="./index_files/40721.jpg"></a>
+            <a href="https://www.undav.edu.ar/index.php?idcateg=509" target="_self"><img border="0" src="./index_files/29159.jpg"></a>
+            <a href="https://adn.undav.edu.ar/index.html" target="_blank"><img border="0" src="./index_files/38104.jpg"></a>
+        </div>
+
+
+
+        <div class="clear"></div>
+        <div id="menuhorizontalfinal">
+            <ul>
+                <li>
+                    <a href="https://undav.edu.ar/index.php?idcateg=5"><img src="./index_files/38404.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.undav.edu.ar/index.php?idcateg=69"><img src="./index_files/38407.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.undav.edu.ar/index.php?idcateg=238"><img src="./index_files/38406.png"></a>
+                </li>
+                <li>
+                    <a href="https://undav.edu.ar/index.php?idcateg=129"><img src="./index_files/38402.png"></a>
+                </li>
+                <li>
+                    <a href="https://ead.undav.edu.ar/" target="_blank"><img src="./index_files/38403.png"></a>
+                </li>
+                <li>
+                    <a href="https://academica.undav.edu.ar/g3w/" target="_blank"><img src="./index_files/38405.png"></a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <!--    <div class="clear"></div>
+	<div id="menuhorizontalfinal">	
+            <ul>
+            <li><a href="http://www.undav.edu.ar/index.php?idcateg=127"><img src="general/recursos/adjuntos/2270.jpg" /></a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=157"><img src="general/recursos/adjuntos/2553.jpg" /></a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=83"><img src="general/recursos/adjuntos/1302.jpg" /></a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=39"><img src="general/recursos/adjuntos/1298.jpg" /></a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=41" target="_blank><img src="general/recursos/adjuntos/1301.jpg" /></a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=128" target="_blank"><img src="general/recursos/adjuntos/1652.jpg" /></a></li>
+           
+ </ul>
+        </div>-->
+
+
+
+
+
+    </div>
+    <!-- FIN_contenido -->
+
+    <!-- INICIO_pie_de_pagina -->
+    <div class="clear"></div>
+    <div id="piefinaltop"></div>
+    <div id="piefinal">
+        <ul class="instit">
+            <li><strong>Universidad Nacional de Avellaneda.</strong> Buenos Aires. Argentina <br>
+            </li><br>
+
+            <li><strong>Sede España, Rectorado:</strong></li>
+            <li>España 350 esq. Colón, Avellaneda | 5436-7553</li>
+
+            <li><strong>Sede Piñeyro:</strong></li>
+            <li>Mario Bravo 1460 esq. Isleta, Piñeyro</li>
+
+            <li><strong>Sede 12 de Octubre:</strong></li>
+            <li>12 de Octubre 463, Avellaneda</li>
+
+            <li><strong>Sede Arenales:</strong></li>
+            <li>Arenales 320, Avellaneda</li>
+
+            <li><strong>Sede Constitución:</strong></li>
+            <li>Constitución 627, Avellaneda</li>
+
+            <li><strong>Escuela Secundaria Técnica UNDAV:</strong></li>
+            <li>Av. Ramón Franco 6475, Wilde | (54 11) 2142-4477</li>
+            <br>
+            <li> </li>
+
+
+            <li>Sitio web administrado por la <strong>Dirección de </strong> </li>
+            <li><strong>Comunicación Institucional</strong> | prensa@undav.edu.ar</li>
+            <li> </li>
+
+
+        </ul>
+        <ul>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=19">Institucional</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=526">Autoridades</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=374">Consejo Superior</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=70">Académica</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=73">Investigación e Innovación</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=7">Extensión Universitaria</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=248">Bienestar Universitario</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=552">Cultura y Comunicación</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=154">Escuela de Posgrado</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=102">Educación a Distancia</a></li>
+
+
+
+        </ul>
+        <ul>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=5">Inscripciones</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=68">Estudiantes</a></li>
+            <li><a href="https://ead.undav.edu.ar/">Campus Virtual</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=298">Biblioteca</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=332">Sedes</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=238">Títulos y Certificaciones</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=369">MIG</a></li>
+            <li><a href="https://undav.edu.ar/index.php?idcateg=320">Observatorios</a></li>
+            <li><a href="http://undav.edu.ar/index.php?idcateg=347">Ludoteca</a></li>
+
+
+
+        </ul>
+        <ul>
+
+            <li><a href="https://undav.edu.ar/index.php?idcateg=323">Noticias</a></li>
+            <li><a href="https://adn.undav.edu.ar/" target="_blank">ADN|UNDAV</a></li>
+            <li><a href="http://radio.undav.edu.ar/" target="_blank">Radio UNDAV</a></li>
+            <li><a href="http://ediciones.undav.edu.ar/" target="_blank">UNDAV Ediciones</a></li>
+            <li><a href="https://www.youtube.com/c/UNDAVTV" target="_blank">UNDAV TV</a></li>
+            <li><a href="https://undavdigital.undav.edu.ar/" target="_blank">UNDAV Digital</a></li>
+
+
+        </ul>
+
+    </div>
+
+
+    <!-- <div id="pie"><p>Universidad Nacional de Avellaneda. Buenos Aires. Argentina - © 2012 - Todos los derechos reservados</p></div> -->
+
+    <!-- FIN_pie_de_pagina -->
+
+
+
+    <script>
+        var slider1 = new accordion.slider("slider1");
+        slider1.init("miaccordion", 0, "open");
+    </script>
+
+
+
+
+    <form name="frm" action="https://undav.edu.ar/index.php?" method="post"><input type="hidden" name="p" id="p" value=""><input type="hidden" name="c" id="c" value="25"></form>
+</body>
+
+</html>

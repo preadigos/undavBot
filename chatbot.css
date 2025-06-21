@@ -1,0 +1,319 @@
+/* Paleta UNDAV: Azul institucional #003366, celeste #009fe3, blanco, gris claro #f1f1f1 */
+
+#chatbot-button {
+    /* Botón flotante para abrir el chatbot */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #003366;
+    color: #fff;
+    padding: 14px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.25);
+    z-index: 9999;
+}
+
+#chatbot-button:hover {
+    background: #009fe3;
+}
+
+#chatbot-modal {
+    /* Ventana principal del chatbot */
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+#chatbot-modal.hidden {
+    display: none;
+}
+
+#chatbot-header {
+    /* Encabezado del chatbot */
+    background: #003366;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbot-body {
+    /* Cuerpo principal del chatbot */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#faq-list {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none; /* Elimina la altura máxima para que ocupe todo el espacio disponible */
+    height: 100%; /* Permite que el scroll se estire hasta el input */
+    overflow-y: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#faq-list:empty {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#faq-list button,
+.faq-button {
+    /* Botones de preguntas frecuentes */
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    background: #f1f1f1;
+    color: #003366;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#faq-list button:hover,
+.faq-button:hover {
+    background: #009fe3;
+    color: #fff;
+}
+
+#faq-list {
+    flex-grow: 1;
+}
+
+#chat-messages {
+    /* Contenedor de mensajes */
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 10px;
+}
+
+.message {
+    /* Mensaje individual */
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: #003366;
+    color: #fff;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background: #f1f1f1;
+    color: #003366;
+    border-left: 4px solid #009fe3;
+}
+
+#chat-input-area {
+    /* Área de input y botón enviar */
+    display: flex;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    background: white;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#send-button {
+    padding: 8px 12px;
+    background: #009fe3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#send-button:hover {
+    background: #003366;
+}
+
+#back-to-faqs-button {
+    /* Botón para volver al menú principal */
+    display: none;
+    width: calc(100% - 20px);
+    margin: 10px 10px 0 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+#back-to-faqs-button:hover {
+    background-color: #009fe3;
+}
+
+#close-chat {
+    /* Botón de cerrar */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+#close-chat:hover {
+    background: #e0e0e0;
+}
+
+#close-chat svg line {
+    stroke: #009fe3;
+    transition: stroke 0.2s;
+}
+
+#close-chat:hover svg line {
+    stroke: #003366;
+}
+
+.typing-dots {
+    /* Animación de puntos suspensivos */
+    display: inline-block;
+    font-size: 22px;
+    letter-spacing: 2px;
+    animation: blink 1s steps(1, end) infinite;
+    color: #888;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+a {
+    color: #009fe3;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #003366;
+}
+
+.feedback-container {
+    /* Feedback de usuario (like/dislike) */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0 8px 0;
+    padding-left: 4px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.feedback-label {
+    color: #003366;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.feedback-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin: 0;
+}
+
+.like-btn,
+.dislike-btn {
+    background: #f1f1f1;
+    border: 1px solid #e0e0e0;
+    color: #003366;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.like-btn:hover,
+.dislike-btn:hover {
+    background: #009fe3;
+    color: #fff;
+}
+
+.like-btn.voted,
+.dislike-btn.voted {
+    background: #009fe3;
+    color: #fff;
+    border: 1px solid #009fe3;
+}
+
+.like-count,
+.dislike-count {
+    font-size: 11px;
+    margin-left: 2px;
+}
+
+#chat-messages::-webkit-scrollbar,
+#faq-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb,
+#faq-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
