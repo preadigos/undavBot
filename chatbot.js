@@ -81,7 +81,7 @@ const faqs = [{
     },
     {
         q: "¿Cómo accedo al campus virtual?",
-        a: "Podés acceder al campus virtual podes ingresar desde <a href='https://ead.undav.edu.ar/' target='_blank'>acá</a>."
+        a: "Para acceder al campus virtual podes ingresar desde <a href='https://ead.undav.edu.ar/' target='_blank'>acá</a>."
     },
     {
         q: "¿Cómo es el proceso de tesis?",
